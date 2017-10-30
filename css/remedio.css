@@ -1,0 +1,83 @@
+body {
+    font-family: 'Arima Madurai', cursive;
+    margin: 0px;
+    background-color: #FCFCFC;
+}
+.titulo {
+    color: hotpink;
+    padding-top: -21px;
+    font-size: 68px;
+}
+header {
+    font-size: 35px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 15px solid #ffccff;
+}
+header img {
+    width: 160px;
+    height: 120px;
+    margin-top: 10px;
+}
+.bula {
+    display: flex;
+    flex-grow: 2;
+    justify-content: center;
+}
+.remedio1 {
+    text-align: center;
+    color: black;
+}
+.remediocoracao {
+    height: 180px;
+    padding-top: 5px;
+}
+footer {
+    text-align: center;
+    background-color: #ff99ff;
+    color: #8000ff;
+    padding: 2px;
+}
+footer a:hover {
+    color: #FF0066;
+    text-decoration: none;
+}
+.love {
+    color: #cc0099;
+}
+nav {
+    margin-bottom: 10px;
+    padding: 0px 10px;
+}
+nav > button {
+    margin-left: 0px;
+    margin-top: 0px;
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    color: hotpink;
+    border-radius: 90px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px 0px #444;
+    transition: background .3s cubic-bezier(0.19, 1, 0.22, 1), color .5s ease-out;
+}
+nav > button:hover {
+    cursor: pointer;
+    background: hotpink;
+    color: #fff;
+}
+.duvidas {
+    float: right;
+}
+h1 {
+    color: hotpink;
+}
+h2 {
+    color: purple;
+}
+.cor {
+    color: #b366ff;
+}

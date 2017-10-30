@@ -1,0 +1,150 @@
+<!-- Início do codigo -->
+<!DOCTYPE html>
+<html lang="pt-br">
+        <!-- Inicío da head (cabeçalho) -->
+<head> 
+    <meta charset="UTF-8">
+    <title>Simplifica Bula</title>
+    <link rel="icon" href="img/icone.png">
+    <link href="https://fonts.googleapis.com/css?family=Arima+Madurai" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<!-- Fim da head -->
+<!-- Inicio do corpo -->
+<body>
+    <!-- Início da header -->
+    <header>
+        <!--Início da div -->
+        <div class="bula">
+            <img src="img/coracao.jpg" alt="Simplifica Bula" class='center'>
+            <h1>Simplifica Bula</h1>
+        </div>
+        <!-- final da div
+        inicio da nav
+        botãos
+        uso de span e strong (pop ups e o strong para deixar a palavra mais visível) -->
+        <nav>
+            <button id="botao">Login</button>
+            <button id="botao1">Cadastro</button>
+            <span class="usuario invisivel">Bem-vinda(o)
+                <strong class="nome-usuario"></strong>
+            </span>
+            <div class="margin">
+                <button class="border-logout invisivel" onclick="logout()" id="logout">Sair</button>
+            </div>
+        </nav>
+    </header>
+    <!-- Final da header
+    Final da nav
+    Inicio da div mãe -->
+    <div id="fundo">
+        <!-- Inicio da section -->
+        <section id="modal" class="container">
+            <!-- inicio da div -->
+            <div class="margin">
+                <img id="fecharfundo" src="img/fecha.svg" alt="fecharfundo">
+                <img class="coracao1" src="img/coracao.jpg" alt="Simplifica Bula">
+                <span class="bula1">Simplifica Bula</span>
+            </div>
+            <!-- Fim da div
+            Inicio do form -->
+            <form>
+                <!-- Inicio da div e inputs -->
+                <div class="margin">
+                    <input required id="email" class="border-radius" type="email" placeholder="Email">
+                </div>
+                <div class="margin">
+                    <input required id="senha" class="border-radius" type="password" placeholder="Senha">
+                </div>
+                <div class="margin">
+                    <button class="border-logar" id="logar">Logar</button>
+                </div>
+                <!-- fim das divs e inputs -->
+            </form>
+<!-- fim da form -->
+        </section>
+        <!-- fim da section -->
+    </div>
+<!-- fim da div mãe -->
+<!-- Início da div pai -->
+    <div id="cadastro">
+        <!-- Início da section -->
+        <section id="modal1" class="container1">
+        <div class="margin">
+                <img id="fecharcadastro" src="img/fecha.svg" alt="fecharcadastro">
+                <img class="coracao1" src="img/coracao.jpg" alt="Simplifica Bula">
+                <span class="bula1">Simplifica Bula</span>
+            </div>
+            <!-- início da form -->
+            <form action="" class="formCadastro">
+                <div class="margin">
+                    <input required id="nome" class="border-radius" type="name" placeholder="Nome Completo">
+                </div>
+                <div class="margin">
+                    <input required id="emailCadastro" class="border-radius" type="email" placeholder="Email">
+                </div>
+                <div class="margin">
+                    <input required id="senhaCadastro" class="border-radius" type="password" placeholder="Senha">
+                </div>
+                <div class="margin">
+                    <button class="border-cadastro" id="Cadastro">Cadastrar</button>
+                </div>
+                <!--final da form -->
+            </form>
+            <!-- final da section -->
+        </section>
+    </div>
+
+    <div id="faltaRemedio">
+        <section id="modal2" class="container2">
+            <div class="margin">
+                <img id="fecharFaltaRemedio" src="img/fecha.svg" alt="fecharFaltaRemedio">
+            </div>
+            <h1>Remédio não encontrado!</h1> 
+            <h2>Por favor digite novamente ou entre em contato!</h2>
+        </section>
+    </div>
+    <section class="missao">
+        <div>
+            <h2>Missão</h2>
+            <p>
+                O
+                <strong class="sp">Simplifica Bula</strong> foi criado com o intuito de auxiliar no entendimento da leitura das bulas dos medicamentos!
+                <br> Também no AUXILIO e INCENTIVO a solicitação de produtos genéricos!<br>
+                Remédios similares são parecidos com os originais, contendo componentes quimicos a mais, que podem retardar a ação do remédio. Se possível faça SEMPRE a opção do GENÉRICO!
+            </p>
+        </div>
+    </section>
+
+    <section class="pesquisando">
+        <div class="barra-de-pesquisa">
+            <label for="remedio">Remédio</label>
+            <input placeholder="Coloque o nome do remédio" id="remedioCadastrado" name="nome" type="text" required>
+            <button class="pesquisa" type="submit" value="Pesquisar" onclick="pesquisaRemedio()">Pesquisar</button>
+        </div>
+    </section>
+
+    <h1 class=atencao>ATENÇÃO:
+        <br> .NÃ0 SE DEVE TOMAR MEDICAMENTOS SEM ORDEM MEDICA;
+        <br> .TODO MEDICAMENTO DEVE FICAR FORA DO ALCANCE DE CRIANÇAS;
+        <br> .NÃO SE DEVE TOMAR MEDICAMENTOS ALÉM DO PRESCRITO PELO MEDICO;
+        <br> .ESTE SITE FOI REALIZADO SOMENTE PARA UM FÁCIL ENTENDIMENTO A BULAS, PORTANTO NÃO APRESENTA E NEM INDICA DOSES DE
+        MEDICAÇÕES;
+        <br> .TODAS AS INFORMAÇÕES CONTIDAS NESSE SITE FORAM RETIRADAS DE BULAS REAIS, DISPONÍVEIS NAS PRÓPRIAS MEDICAÇÕES, SITES
+        DE INTERNET E BULÁRIOS.
+    </h1>
+
+
+
+    <footer>
+        <p>Feito com
+            <span class="love">Amor</span> por
+            <a href="mailto:simplifica.bula@gmail.com" target "_blank">Priscila Kis Câmara Ferrari</a> -2017 </p>
+    </footer>
+    <script src="script/pesquisa.js"></script>
+    <script src="script/login.js"></script>
+    <script src="script/cadastro.js"></script>
+    <script src="script/logout.js"></script>
+</body>
+
+</html>

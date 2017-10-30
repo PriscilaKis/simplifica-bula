@@ -1,0 +1,73 @@
+body {
+    font-family: 'Arima Madurai', cursive;
+    margin: 0px;
+    background-color: #FCFCFC;
+}
+.titulo {
+    color: hotpink;
+    padding-top: -21px;
+    font-size: 68px;
+}
+header {
+    font-size: 35px;
+    width: 100%;
+    height: 130px;
+    display: flex;
+    justify-content: space-around;
+    border-bottom: 15px solid #ffccff;
+}
+header img {
+    width: 160px;
+    height: 120px;
+    margin-top: 10px;
+}
+footer {
+    text-align: center;
+    background-color: #ff99ff;
+    color: #8000ff;
+    padding: 2px;
+}
+footer a:hover {
+    color: #FF0066;
+    text-decoration: none;
+}
+.love {
+    color: #cc0099;
+}
+.duvida {
+    text-align: center;
+    color: #FF0066;
+    padding: 10px;
+}
+.encontrou {
+    text-align: center;
+    color: #FF0066;
+    padding: 10px;
+}
+.email {
+    text-align: center;
+    color: #FF0066;
+    padding: 10px;
+}
+.remediofim {
+    height: 200px;
+    margin: 10px auto;
+    display: flex;
+}
+.duvidas nav > button {
+    margin: 0 auto;
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    color: hotpink;
+    border-radius: 90px;
+    font-size: 12px;
+    font-weight: 700;
+    box-shadow: 1px 1px 5px 0px #444;
+    transition: background .3s cubic-bezier(0.19, 1, 0.22, 1), color .5s ease-out;
+}
+.duvidas nav > button:hover {
+    cursor: pointer;
+    background: hotpink;
+    color: #fff;
+}

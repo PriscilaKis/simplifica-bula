@@ -1,0 +1,303 @@
+body {
+  font-family: 'Arima Madurai', cursive;
+  margin: 0px;
+  background-color: #FCFCFC;
+}
+h1,h2 {
+  color: hotpink;
+}
+header {
+  font-size: 35px;
+  width: 100%;
+  height: 130px;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 15px solid #ffccff;
+}
+.bula {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+}
+.missao {
+  text-align: center;
+  justify-content: center;
+  background-color: #ffb3da;
+  font-size: 20px;
+  color: hotpink;
+}
+.bula1 {
+  display: flex;
+  flex-grow: 2;
+  justify-content: center;
+  color: hotpink;
+}
+header img {
+  width: 160px;
+  height: 120px;
+  margin-top: 10px;
+}
+.botao {
+  padding-top: 10px;
+  text-align: center;
+  font-size: 80px;
+  border-radius: 40px;
+}
+#nome {
+  width: 260px;
+  height: 20px;
+}
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  background-color: #FCFCFC;
+}
+nav > .usuario {
+  font-size: 20px;
+  padding-top: 45px;
+}
+nav > button {
+  margin-left: 30px;
+  margin-top: 82px;
+  background: #fff;
+  border: none;
+  padding: 10px 20px;
+  color: hotpink;
+  border-radius: 90px;
+  font-size: 12px;
+  font-weight: 700;
+  box-shadow: 1px 1px 5px 0px #444;
+  transition: background .3s cubic-bezier(0.19, 1, 0.22, 1), color .5s ease-out;
+}
+nav > button:hover {
+  cursor: pointer;
+  background: hotpink;
+  color: #fff;
+}
+main {
+  flex: 1 1 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 20px;
+}
+.border-radius {
+  border-radius: 20px;
+  width: 260px;
+  height: 20px;
+  border: 1px solid;
+  padding: 10px;
+}
+.border-logar {
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 10px;
+  background-color: #ca5dc6;
+  color: white;
+  float: right;
+  margin-right: 75px;
+}
+.border-logout {
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 10px;
+  background-color: #ca5dc6;
+  color: white;
+  float: right;
+  margin-right: 75px;
+  margin-bottom: -50px;
+}
+.border-cadastro {
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 10px;
+  background-color: #ca5dc6;
+  color: white;
+  float: right;
+  margin-right: 78px;
+}
+.container {
+  background-color: #FCFCFC;
+  padding: 60px;
+  width: 420px;
+  height: 450px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.container1 {
+  background-color: #FCFCFC;
+  padding: 60px;
+  width: 420px;
+  height: 450px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.container2 {
+  background-color: #FCFCFC;
+  padding: 60px;
+  width: 420px;
+  height: 450px;
+  margin: 30px;
+  text-align: center;
+  border-radius: 20px;
+}
+.margin {
+  margin: 25px;
+}
+#modal {
+  position: relative;
+  margin: auto;
+  height: 360px;
+  width: 300px;
+}
+#modal.visivel {
+  display: block;
+}
+#modal1 {
+  position: relative;
+  margin: auto;
+  height: 430px;
+  width: 285px;
+}
+#modal1.visivel {
+  display: block;
+}
+#fundo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: none;
+}
+#fundo.visivel {
+  display: flex;
+}
+#fundo.naovisivel {
+  display: none;
+}
+.coracao1 {
+  height: 80px;
+  width: 90px;
+}
+.invisivel {
+  display: none;
+}
+#cadastro {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: none;
+}
+#cadastro.visivel {
+  display: flex;
+}
+#faltaRemedio {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: none;
+}
+#faltaRemedio.visivel {
+  display: flex;
+}
+#modal2 {
+  position: relative;
+  margin: auto;
+  height: 225px;
+  width: 285px;
+}
+#modal2.visivel {
+  display: block;
+}
+#fecharfundo,
+#fecharcadastro,
+#fecharFaltaRemedio {
+  max-width: 30px;
+  position: absolute;
+  top: 8px;
+  right: 10px;
+  height: 30px;
+  width: 20px;
+}
+footer {
+  text-align: center;
+  background-color: #ff99ff;
+  color: #8000ff;
+  padding: 2px;
+}
+footer a:hover {
+  color: #FF0066;
+  text-decoration: none;
+}
+.love {
+  color: #cc0099;
+}
+.pesquisa {
+  border-radius: 20px;
+  text-align: center;
+  width: 80px;
+  padding: 10px;
+  background-color: #ca5dc6;
+  color: white;
+  float: right;
+  margin-right: 75px;
+  margin-left: 15px;
+  margin-top: 10px;
+}
+#sumirlogout {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, .4);
+  display: none;
+}
+#sumirlogout.visivel {
+  display: flex;
+}
+#sumirlogout.naovisivel {
+  display: none;
+}
+.atencao {
+  text-align: center;
+  background-color: #ff4d4d;
+  color: black;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+.pesquisando {
+  display: flex;
+  margin: 50px 0px;
+}
+.barra-de-pesquisa {
+  margin: 0 auto;
+  height: 30px;
+  font-size: 30px;
+  padding: 10px;
+}
+.barra-de-pesquisa input {
+  height: 30px;
+  font-size: 30px;
+  padding: 10px;
+  width: 360px;
+}
+label {
+  color: purple;
+}
