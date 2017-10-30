@@ -1,8 +1,9 @@
 <!-- Início do codigo -->
 <!DOCTYPE html>
 <html lang="pt-br">
-        <!-- Inicío da head (cabeçalho) -->
-<head> 
+<!-- Inicío da head (cabeçalho) -->
+
+<head>
     <meta charset="UTF-8">
     <title>Simplifica Bula</title>
     <link rel="icon" href="img/icone.png">
@@ -11,6 +12,7 @@
 </head>
 <!-- Fim da head -->
 <!-- Inicio do corpo -->
+
 <body>
     <!-- Início da header -->
     <header>
@@ -61,16 +63,16 @@
                 </div>
                 <!-- fim das divs e inputs -->
             </form>
-<!-- fim da form -->
+            <!-- fim da form -->
         </section>
         <!-- fim da section -->
     </div>
-<!-- fim da div mãe -->
-<!-- Início da div pai -->
+    <!-- fim da div mãe -->
+    <!-- Início da div pai -->
     <div id="cadastro">
         <!-- Início da section -->
         <section id="modal1" class="container1">
-        <div class="margin">
+            <div class="margin">
                 <img id="fecharcadastro" src="img/fecha.svg" alt="fecharcadastro">
                 <img class="coracao1" src="img/coracao.jpg" alt="Simplifica Bula">
                 <span class="bula1">Simplifica Bula</span>
@@ -93,29 +95,36 @@
             </form>
             <!-- final da section -->
         </section>
+        <!-- final da div pai -->
     </div>
-
+    <!-- Inicio da div e abertura da section -->
     <div id="faltaRemedio">
         <section id="modal2" class="container2">
             <div class="margin">
                 <img id="fecharFaltaRemedio" src="img/fecha.svg" alt="fecharFaltaRemedio">
             </div>
-            <h1>Remédio não encontrado!</h1> 
+            <h1>Remédio não encontrado!</h1>
             <h2>Por favor digite novamente ou entre em contato!</h2>
         </section>
     </div>
+    <!-- Final da div e da section, abertura de uma nova div e section -->
     <section class="missao">
         <div>
+            <!--Abertura de uma h2 -->
             <h2>Missão</h2>
+            <!-- texto Missão -->
             <p>
                 O
                 <strong class="sp">Simplifica Bula</strong> foi criado com o intuito de auxiliar no entendimento da leitura das bulas dos medicamentos!
-                <br> Também no AUXILIO e INCENTIVO a solicitação de produtos genéricos!<br>
-                Remédios similares são parecidos com os originais, contendo componentes quimicos a mais, que podem retardar a ação do remédio. Se possível faça SEMPRE a opção do GENÉRICO!
+                <br> Também no AUXILIO e INCENTIVO a solicitação de produtos genéricos!
+                <br> Remédios similares são parecidos com os originais, contendo componentes quimicos a mais, que podem retardar
+                a ação do remédio. Se possível faça SEMPRE a opção do GENÉRICO!
             </p>
+            <!-- fim do texto Missão -->
         </div>
+        <!-- Final da div -->
     </section>
-
+    <!-- Final da section e abertura de uma nova section e div-->
     <section class="pesquisando">
         <div class="barra-de-pesquisa">
             <label for="remedio">Remédio</label>
@@ -123,28 +132,37 @@
             <button class="pesquisa" type="submit" value="Pesquisar" onclick="pesquisaRemedio()">Pesquisar</button>
         </div>
     </section>
+    <!--  <fechamento da div, section e abertura de uma h1 -->
 
-    <h1 class=atencao>ATENÇÃO:
-        <br> .NÃ0 SE DEVE TOMAR MEDICAMENTOS SEM ORDEM MEDICA;
-        <br> .TODO MEDICAMENTO DEVE FICAR FORA DO ALCANCE DE CRIANÇAS;
-        <br> .NÃO SE DEVE TOMAR MEDICAMENTOS ALÉM DO PRESCRITO PELO MEDICO;
-        <br> .ESTE SITE FOI REALIZADO SOMENTE PARA UM FÁCIL ENTENDIMENTO A BULAS, PORTANTO NÃO APRESENTA E NEM INDICA DOSES DE
-        MEDICAÇÕES;
-        <br> .TODAS AS INFORMAÇÕES CONTIDAS NESSE SITE FORAM RETIRADAS DE BULAS REAIS, DISPONÍVEIS NAS PRÓPRIAS MEDICAÇÕES, SITES
-        DE INTERNET E BULÁRIOS.
-    </h1>
-
-
-
+    <section class="atencao">
+        <h1>ATENÇÃO</h1>
+        <ul>
+            <li>NÃO TOMAR MEDICAMENTOS SEM ORDEM MÉDICA;</li>
+            <li>TODO MEDICAMENTO DEVE FICAR FORA DO ALCANCE DE CRIANÇAS;</li>
+            <li>NÃO TOMAR MEDICAMENTOS ALÉM DO PRESCRITO PELO MÉDICO;</li>
+            <li>ESTE SITE FOI REALIZADO SOMENTE PARA UM FÁCIL ENTENDIMENTO A BULAS, PORTANTO NÃO APRESENTA E NEM INDICA DOSES DE
+            MEDICAÇÕES;</li>
+            <li>TODAS AS INFORMAÇÕES CONTIDAS NESSE SITE FORAM RETIRADAS DE BULAS REAIS, DISPONÍVEIS NAS PRÓPRIAS MEDICAÇÕES, SITES
+            DE INTERNET E BULÁRIOS.</li>
+        </ul>
+        
+    </section>
+    <!--Fechamento da h1 e abertura do footer, do p, do a, e span-->
     <footer>
         <p>Feito com
             <span class="love">Amor</span> por
-            <a href="mailto:simplifica.bula@gmail.com" target "_blank">Priscila Kis Câmara Ferrari</a> -2017 </p>
+            <a href="mailto:simplifica.bula@gmail.com" target "_blank">Priscila Kis Câmara Ferrari</a> - 2017 </p>
     </footer>
+
+    <!-- Fechamento do p, do a, e do footer-->
+    <!--link do JavaScript com o HTML -->
+
     <script src="script/pesquisa.js"></script>
     <script src="script/login.js"></script>
     <script src="script/cadastro.js"></script>
     <script src="script/logout.js"></script>
+    <!--fechamento da body-->
 </body>
+<!-- fechamento do HTML -->
 
 </html>

@@ -4,7 +4,7 @@ body {
   background-color: #FCFCFC;
 }
 h1,h2 {
-  color: hotpink;
+  color: #f955a8;
 }
 header {
   font-size: 35px;
@@ -22,15 +22,21 @@ header {
 .missao {
   text-align: center;
   justify-content: center;
-  background-color: #ffb3da;
+  background-color: #fff3f9;
   font-size: 20px;
-  color: hotpink;
+  color: #f955a8;
+  padding: 40px;
 }
+
+.missao h2 {
+  margin: 0px;
+}
+
 .bula1 {
   display: flex;
   flex-grow: 2;
   justify-content: center;
-  color: hotpink;
+  color: #f955a8;
 }
 header img {
   width: 160px;
@@ -64,7 +70,7 @@ nav > button {
   background: #fff;
   border: none;
   padding: 10px 20px;
-  color: hotpink;
+  color: #f955a8;
   border-radius: 90px;
   font-size: 12px;
   font-weight: 700;
@@ -73,7 +79,7 @@ nav > button {
 }
 nav > button:hover {
   cursor: pointer;
-  background: hotpink;
+  background: #f955a8;
   color: #fff;
 }
 main {
@@ -237,9 +243,14 @@ main {
 }
 footer {
   text-align: center;
-  background-color: #ff99ff;
-  color: #8000ff;
+  background-color: #fa97ca;
   padding: 2px;
+  color: #8000ff;
+}
+footer a {
+  color: #8000ff;
+  text-decoration: none;
+  font-weight: bold;
 }
 footer a:hover {
   color: #FF0066;
@@ -277,14 +288,26 @@ footer a:hover {
 }
 .atencao {
   text-align: center;
-  background-color: #ff4d4d;
-  color: black;
-  padding-top: 50px;
-  padding-bottom: 50px;
+  background-color: #ff4e45;
+  color:#FFF;
+  padding-top: 40px;
+  padding-bottom: 40px;
 }
+
+.atencao h1 {
+  margin: 0px;
+  color: #fff;
+  font-size: 32px;
+}
+
+.atencao ul li {
+  list-style: none;
+  margin: 5px;
+}
+
 .pesquisando {
   display: flex;
-  margin: 50px 0px;
+  padding: 80px;
 }
 .barra-de-pesquisa {
   margin: 0 auto;
@@ -294,7 +317,7 @@ footer a:hover {
 }
 .barra-de-pesquisa input {
   height: 30px;
-  font-size: 30px;
+  font-size: 24px;
   padding: 10px;
   width: 360px;
 }

@@ -1,5 +1,8 @@
+<!--Inicio do código -->
 <!DOCTYPE html>
 <html lang="pt-br">
+<!--Inicio da head (cabeçalho)
+Uso de links para img, fonte de letra, e os css (style e duvida)-->
 
 <head>
     <meta charset="UTF-8">
@@ -9,32 +12,48 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/duvida.css">
 </head>
+<!--Fim da head (cabeçalho)
+Começo da body -->
 
 <body>
+    <!--Começo da header e da div -->
     <header>
         <div class="bula">
             <img src="img/coracao.jpg" alt="Simplifica Bula" class='center'>
             <h1>Simplifica Bula</h1>
         </div>
     </header>
-
+    <!--Final da header e da div -->
+    <!--Inicio da section, img e h2 -->
     <section class="duvidas">
         <img src="img/remediofim.jpg" alt="remedio final" class="remediofim">
-        <h2 class="duvida"><strong>Ficou com alguma dúvida?</strong></h2>
+        <h2 class="duvida">
+            <strong>Ficou com alguma dúvida?</strong>
+        </h2>
         <h2 class="encontrou">Não encontrou algum medicamento?</h2>
-        <h2 class="email">Mande um e mail para<a href="mailto:simplifica.bula@gmail.com" target "_blank"> simplificabula@gmail.com</a></h2>
+        <h2 class="email">Mande um e-mail para
+            <a href="mailto:simplifica.bula@gmail.com" target "_blank"> simplificabula@gmail.com</a>
+        </h2>
+        <!--Final da img e h2 
+        Inicio da nav-->
         <nav>
             <button class="border-voltar" id="volta" onclick="voltaHome()">Voltar</button>
         </nav>
+        <!--Final da nav 
+         Final da section-->
     </section>
-
+    <!-- Inicio do Footer (Rodapé), p, span e a-->
     <footer>
         <p>Feito com
             <span class="love">Amor</span> por
-            <a href="mailto:simplifica.bula@gmail.com" target "_blank">Priscila Kis Câmara Ferrari</a> -2017 
+            <a href="mailto:simplifica.bula@gmail.com" target "_blank">Priscila Kis Câmara Ferrari</a> -2017
         </p>
+        <!-- Final do Footer (Rodapé), p, span e a-->
     </footer>
+    <!-- Link da pasta do JavaScript com o HTML-->
     <script src="script/duvidas.js"></script>
+    <!-- Final do body-->
 </body>
+<!-- Final do HTML-->
 
 </html>

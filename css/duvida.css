@@ -4,7 +4,7 @@ body {
     background-color: #FCFCFC;
 }
 .titulo {
-    color: hotpink;
+    color: #f955a8;
     padding-top: -21px;
     font-size: 68px;
 }
@@ -59,7 +59,7 @@ footer a:hover {
     background: #fff;
     border: none;
     padding: 10px 20px;
-    color: hotpink;
+    color: #f955a8;
     border-radius: 90px;
     font-size: 12px;
     font-weight: 700;
@@ -68,6 +68,6 @@ footer a:hover {
 }
 .duvidas nav > button:hover {
     cursor: pointer;
-    background: hotpink;
+    background: #f955a8;
     color: #fff;
 }
