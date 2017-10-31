@@ -5,35 +5,26 @@ var fecharcadastro = document.getElementById("fecharcadastro");
 var botaoLogout = document.getElementById("logout");
 
 
-botao1.onclick = function() {
+botao1.onclick = function () {
     cadastro.classList.add("visivel");
 }
 
-fecharcadastro.onclick = function(){
+fecharcadastro.onclick = function () {
     cadastro.classList.remove("visivel");
 }
 
-cadastro.onclick = function(e){
-    if (e.target == cadastro){
-    cadastro.classList.remove("visivel");
+cadastro.onclick = function (e) {
+    if (e.target == cadastro) {
+        cadastro.classList.remove("visivel");
     }
 }
-
-
-// var nome = document.getElementById("cadastro");
-// var emailCadastro = document.getElementById("email");
-// var senhaCadastro = document.querySelector("#senha");
-
-
-//var formulario = document.querySelector("form");
-
 
 //Seleciona o formulario
 var formCadastro = document.querySelector(".formCadastro");
 //quando mandar enviar os dados
-formCadastro.onsubmit = function(e){
+formCadastro.onsubmit = function (e) {
     //Seleciona os inputs
-    // e.preventDefault();
+
     var emailCadastro = document.querySelector("#emailCadastro");
     var senhaCadastro = document.querySelector("#senhaCadastro");
     var nomeCadastro = document.querySelector('#nome');
@@ -42,14 +33,6 @@ formCadastro.onsubmit = function(e){
     var modalCadastro = document.querySelector("#modalCadastro");
     var usuarios = JSON.parse(localStorage.usuarios || "[]");
 
-
-//localStorage.emal = "blablabla"
-//localStorage.setItem("email", "blablabla")
-    
-
-    //localStorage.email = emailCadastro.value;
-    //localStorage.senha = senhaCadastro.value;
-
     usuarios.push({
         nome: nomeCadastro.value,
         email: emailCadastro.value,
@@ -57,12 +40,9 @@ formCadastro.onsubmit = function(e){
     });
 
     localStorage.usuarios = JSON.stringify(usuarios);
-
-    //retur: false
-
 }
 
-var mostraUsuario = function() {
+var mostraUsuario = function () {
     var usuario = document.querySelector('.usuario');
     var espacoNomeUsuario = document.querySelector('.usuario strong');
 
@@ -73,7 +53,7 @@ var mostraUsuario = function() {
     espacoNomeUsuario.innerText = JSON.parse(localStorage.usuario).nome;
 }
 
-window.onload = function() {
+window.onload = function () {
     if (localStorage.usuario) {
         mostraUsuario();
     }

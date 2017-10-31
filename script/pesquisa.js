@@ -1,4 +1,4 @@
-var popupRemedioNaoEncontrado= document.getElementById("faltaRemedio");
+var popupRemedioNaoEncontrado = document.getElementById("faltaRemedio");
 
 var remedios = [
     {
@@ -29,13 +29,13 @@ var remedios = [
 
 
 
-var remedioExiste = function(remedioPesquisado) {
+var remedioExiste = function (remedioPesquisado) {
     var resultado = false;
     delete localStorage.remedioEncontrado;
 
     for (var index = 0; index < remedios.length; index++) {
         var remedioAtual = remedios[index];
-        
+
         if (remedioPesquisado.toLowerCase() === remedioAtual.nome.toLowerCase()) {
             resultado = true;
             localStorage.remedioEncontrado = JSON.stringify(remedioAtual);
@@ -46,17 +46,17 @@ var remedioExiste = function(remedioPesquisado) {
     return resultado;
 };
 
-var pesquisaRemedio = function() {
+var pesquisaRemedio = function () {
     var nomeRemedio = document.querySelector("#remedioCadastrado").value;
 
-    if (remedioExiste(nomeRemedio)){
-        window.location.href ="remedio.html"
-    }else{
+    if (remedioExiste(nomeRemedio)) {
+        window.location.href = "remedio.html"
+    } else {
         popupRemedioNaoEncontrado.classList.add("visivel");
     }
-    
+
 };
 
-fecharFaltaRemedio.onclick = function(){
+fecharFaltaRemedio.onclick = function () {
     popupRemedioNaoEncontrado.classList.remove("visivel");
 }

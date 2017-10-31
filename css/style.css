@@ -3,7 +3,8 @@ body {
   margin: 0px;
   background-color: #FCFCFC;
 }
-h1,h2 {
+h1,
+h2 {
   color: #f955a8;
 }
 header {
@@ -27,11 +28,9 @@ header {
   color: #f955a8;
   padding: 40px;
 }
-
 .missao h2 {
   margin: 0px;
 }
-
 .bula1 {
   display: flex;
   flex-grow: 2;
@@ -289,22 +288,19 @@ footer a:hover {
 .atencao {
   text-align: center;
   background-color: #ff4e45;
-  color:#FFF;
+  color: #FFF;
   padding-top: 40px;
   padding-bottom: 40px;
 }
-
 .atencao h1 {
   margin: 0px;
   color: #fff;
   font-size: 32px;
 }
-
 .atencao ul li {
   list-style: none;
   margin: 5px;
 }
-
 .pesquisando {
   display: flex;
   padding: 80px;
